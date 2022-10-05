@@ -15,13 +15,14 @@ fun evenNumberCounter (x:Array<Int>): Int {
     var sum = 0;
     var counter = 0;
     var sahualo = 0;
-for( num in x){
-    if(num % 2 ==0){
-        sum += num
-        counter ++
+    for( num in x.indices){
 
+        if(num % 2 == 0){
+            sum += x[num]
+            counter ++
+
+        }
     }
-}
     sahualo = sum / counter
     return  sahualo;
 
